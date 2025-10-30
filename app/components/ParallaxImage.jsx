@@ -52,9 +52,9 @@ export default function ParallaxImage({ src, alt, title, subtitle, isHero = fals
         <div className={`absolute inset-0 ${isHero ? 'bg-linear-to-b from-black/30 via-black/40 to-black/70' : 'bg-black/30'}`}></div>
       </div>
       {!isHero && (
-        <div className="absolute bottom-10 left-10 text-white z-10">
-          <p className="font-crimson text-[1vw] tracking-[0.25em] uppercase mb-0.5">{subtitle}</p>
-          <h3 className="text-[4vw] font-cormorant font-light">{title}</h3>
+        <div className="absolute bottom-10 sm:left-10 left-5 text-white z-10">
+          <p className="font-crimson text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.25em] uppercase mb-0.5">{subtitle}</p>
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-cormorant font-light">{title}</h3>
         </div>
       )}
     </div>
